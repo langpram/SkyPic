@@ -12,10 +12,9 @@ const __dirname = dirname(__filename);
 
 // Cloudinary config
 cloudinary.config({
-  cloud_name: process.env.CLOUDINARY_CLOUD_NAME || "dnh5owdpa",
-  api_key: process.env.CLOUDINARY_API_KEY || "733773516396716",
-  api_secret:
-    process.env.CLOUDINARY_API_SECRET || "fIKANfvSFrR3j1Ush1N_ud2xqMg",
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
 const app = express();
